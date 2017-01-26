@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <style>
+        body {
+            padding: 10px;
+            font-size: 10pt;
+            font-family: Tahoma;
+        }
+        .bold {
+            font-weight: bold;
+        }
+
+        .title {
+            margin-bottom: 2px;
+        }
+
+        .padding-left-5 {
+            padding-left: 5px;
+        }
+
+      
+        .display-block { 
+            display:block;
+        }
+        .print-button {
+            margin: 10px 0 ;
+            padding: 2px;
+            min-width: 75px;
+            background: rgba(0,0,0,0.05);
+            border: 1px solid #808080;
+            border-radius: 10px;
+            outline: none;
+            float:right;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        @media print {
+            .print-button {
+                display: none;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+        }
+
+        table {
+            width: 100%;
+            padding: 10pt;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.05);
+            border-collapse:collapse;
+        }
+
+        td { 
+            padding:3pt;
+            border-bottom: 1px solid #ccc;
+
+        }
+        td.no-border { 
+              border-bottom: none;
+
+        }
+        tr:first-child td { 
+              border-bottom: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <button onclick="print()" class="print-button">Print</button>
+
+    <table>
+        <tr>
+            <td colspan="2" class="text-center">
+                <label>$header</label>
+            </td>
+        </tr>
+
+        <tr class="bottom-line">
+            <td colspan="2">
+                <label class="display-block title">Name</label>
+                <label class="bold padding-left-5">$name</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="display-block title">Job</label>
+                <label class="bold padding-left-5">$job</label>
+            </td>
+            <td>
+                <label class="display-block title">Job Description</label>
+                <label class="bold padding-left-5">$job-desc</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="display-block title">Basic Salary</label>
+                <label class="bold padding-left-5">$salary</label>
+            </td>
+            <td>
+                <label class="display-block title">Total Salary</label>
+                <label class="bold padding-left-5">$total-salary</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="no-border">
+                <label class="display-block title">Address</label>
+                <label class="bold padding-left-5">$address</label>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
