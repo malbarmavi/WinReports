@@ -59,7 +59,7 @@
       this.ddlRepotDesign.IntegralHeight = false;
       this.ddlRepotDesign.Items.AddRange(new object[] {
             "Defualt",
-            "Dark",
+            "Blue",
             "Orange"});
       this.ddlRepotDesign.Location = new System.Drawing.Point(23, 12);
       this.ddlRepotDesign.Name = "ddlRepotDesign";

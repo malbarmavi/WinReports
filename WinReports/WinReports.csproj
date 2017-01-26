@@ -107,6 +107,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Reports\blue.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Reports\defualt.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
