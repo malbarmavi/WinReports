@@ -20,12 +20,12 @@ namespace WinReports
 
     private void WinReports_Load ( object sender, EventArgs e )
       {
-      
+
       }
 
     private void aboutToolStripMenuItem_Click ( object sender, EventArgs e )
       {
-      MessageBox.Show("Report Magic \nMuhammad Khair Albarmawi","Magic Report",MessageBoxButtons.OK,MessageBoxIcon.Information);
+      MessageBox.Show("Report Magic \nMuhammad Khair Albarmawi", "Magic Report", MessageBoxButtons.OK, MessageBoxIcon.Information);
       }
     }
   }

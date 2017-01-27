@@ -46,6 +46,7 @@
       this.txtAddress = new System.Windows.Forms.TextBox();
       this.lblAddress = new System.Windows.Forms.Label();
       this.btnPrint = new System.Windows.Forms.Button();
+      this.chkFillWidth = new System.Windows.Forms.CheckBox();
       this.groupBox1.SuspendLayout();
       this.groupBox2.SuspendLayout();
       this.groupBox3.SuspendLayout();
@@ -63,7 +64,7 @@
             "Orange"});
       this.ddlRepotDesign.Location = new System.Drawing.Point(23, 12);
       this.ddlRepotDesign.Name = "ddlRepotDesign";
-      this.ddlRepotDesign.Size = new System.Drawing.Size(614, 24);
+      this.ddlRepotDesign.Size = new System.Drawing.Size(481, 24);
       this.ddlRepotDesign.TabIndex = 1;
       // 
       // groupBox1
@@ -225,12 +226,24 @@
       this.btnPrint.UseVisualStyleBackColor = false;
       this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
       // 
+      // chkFillWidth
+      // 
+      this.chkFillWidth.AutoSize = true;
+      this.chkFillWidth.Location = new System.Drawing.Point(547, 14);
+      this.chkFillWidth.Name = "chkFillWidth";
+      this.chkFillWidth.Size = new System.Drawing.Size(90, 21);
+      this.chkFillWidth.TabIndex = 7;
+      this.chkFillWidth.Text = "Full Width";
+      this.chkFillWidth.UseVisualStyleBackColor = true;
+      this.chkFillWidth.Click += new System.EventHandler(this.chkFillWidth_Click);
+      // 
       // ReportSetting
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.Color.White;
       this.ClientSize = new System.Drawing.Size(649, 592);
+      this.Controls.Add(this.chkFillWidth);
       this.Controls.Add(this.btnPrint);
       this.Controls.Add(this.groupBox4);
       this.Controls.Add(this.groupBox3);
@@ -250,6 +263,7 @@
       this.groupBox4.ResumeLayout(false);
       this.groupBox4.PerformLayout();
       this.ResumeLayout(false);
+      this.PerformLayout();
 
       }
 
@@ -272,5 +286,6 @@
     private System.Windows.Forms.TextBox txtAddress;
     private System.Windows.Forms.Label lblAddress;
     private System.Windows.Forms.Button btnPrint;
+    private System.Windows.Forms.CheckBox chkFillWidth;
     }
   }
