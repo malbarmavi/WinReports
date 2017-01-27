@@ -45,6 +45,7 @@
       this.WebView.Location = new System.Drawing.Point(0, 0);
       this.WebView.MinimumSize = new System.Drawing.Size(20, 20);
       this.WebView.Name = "WebView";
+      this.WebView.ScrollBarsEnabled = false;
       this.WebView.Size = new System.Drawing.Size(802, 641);
       this.WebView.TabIndex = 0;
       this.WebView.WebBrowserShortcutsEnabled = false;
@@ -55,12 +56,12 @@
       this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
       this.contextMenu.Name = "contextMenu";
-      this.contextMenu.Size = new System.Drawing.Size(126, 30);
+      this.contextMenu.Size = new System.Drawing.Size(120, 28);
       // 
       // aboutToolStripMenuItem
       // 
       this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
+      this.aboutToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
       this.aboutToolStripMenuItem.Text = "About";
       this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
       // 
@@ -71,6 +72,7 @@
       this.ClientSize = new System.Drawing.Size(802, 641);
       this.Controls.Add(this.WebView);
       this.Name = "WinReports";
+      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "WinReports";
       this.Load += new System.EventHandler(this.WinReports_Load);
       this.contextMenu.ResumeLayout(false);
